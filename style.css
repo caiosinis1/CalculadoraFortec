@@ -1,0 +1,171 @@
+/* Estilo base já adicionado */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+nav {
+    background-color: #01367A;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #01367A;
+    width: 65%;
+    max-width: 700px; /* Evita que a calculadora fique grande demais */
+    padding: 20px;
+    height: auto;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.inputs {
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.input-line {
+    flex: 1 1 48%; /* Garante que os inputs fiquem lado a lado em telas médias */
+    margin-bottom: 10px;
+}
+
+.display-resultado {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#display {
+    padding: 14px;
+    width: 30%;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.resultado-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white; /* Ou mude para outra cor, se preferir */
+    margin-bottom: 8px; /* Espaçamento entre o título e o campo */
+    text-align: center;
+}
+
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+input, select {
+    width: 100%;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 20px;
+    outline: none;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin: 20px 0;
+    margin-top: 0;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+button {
+    border-radius: 15px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-submit {
+    background-color: rgb(14, 174, 121);
+}
+
+#btn-clear {
+    background-color: rgb(214, 115, 15);
+}
+
+#btn-submit:hover {
+    background-color: rgb(13, 138, 97);
+}
+
+#imagem-logo{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .inputs {
+        flex-wrap: wrap;
+    }
+
+    .input-line {
+        flex: 1 1 100%; 
+    }
+
+    .botoes {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .display-resultado{
+        width: 100%;
+    }
+    #display{
+        width: 80%;
+    }
+}

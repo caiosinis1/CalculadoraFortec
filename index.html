@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logoFortec.PNG" type="image/x-icon">
+    <script src="script.js" defer  ></script>
+    <title>Calculadora Blocos</title>
+</head>
+<body>
+    <nav>
+        <h1>Calculadora FORTEC</h1>
+    </nav>
+    <main>
+
+        <form class="content">
+            <!--INPUT DE METRAGEM-->
+            <img id="imagem-logo" src="logoFortec.PNG" alt="logotipo fortec">
+            <div class="inputs">
+                <div class="input-line">
+                    <label for="">Metragem da parede (m²)</label>
+                    <input type="number" name="metragem" id="input-metragem" step="0.01" placeholder="Ex.: 20.5" required>
+                </div>
+
+                <!--INPUT TAMANHO JANELA-->
+                <div class="input-line">
+                    <label for="">Tamanho da janela (m)</label>
+                    <input type="number" name="janela" id="input-janela" step="0.01" placeholder="Ex.: 2.0">
+                </div>
+
+                <!--INPUT TAMANHO PORTA-->
+                <div class="input-line">
+                    <label for="">Tamanho da porta (m)</label>
+                    <input type="number" name="porta" id="input-porta" step="0.01" placeholder="Ex.: 1.5">
+                </div>
+
+                <div class="input-line">
+                    <label for="tipoBloco">Tipo do bloco</label>
+                    <select name="tipoBloco" id="tipo-bloco">
+                        <option value="bloco1">100x50x15 cm</option>
+                        <option value="bloco2">100x25x15 cm</option>
+                        <option value="bloco3">50x50x15 cm</option>
+                        <option value="bloco4">60x30x10 cm</option>
+                        <option value="bloco5">60x30x12,5 cm</option>
+                        <option value="bloco6">60x30x15 cm</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="display-resultado">
+                <label for="display" class="resultado-titulo">Resultado</label>
+                <input type="text" name="display" id="display" readonly>
+            </div>
+
+            <div class="botoes">
+                <button type="button" id="btn-submit">Calcular</button>
+                <button type="button" id="btn-clear">Limpar</button>
+            </div>
+            
+        </form>
+    </main>
+</body>
+</html>
